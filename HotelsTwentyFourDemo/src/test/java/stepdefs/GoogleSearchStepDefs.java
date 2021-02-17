@@ -7,7 +7,7 @@ public class GoogleSearchStepDefs {
     private static final GoogleSearchPage googleSearchPage = new GoogleSearchPage();
 
     @Given("^I search \"([^\"]*)\"$")
-    public void i_search(String searchedText) {
+    public void iSearch(String searchedText) {
         googleSearchPage.getSearchInputField().sendKeys(searchedText);
         googleSearchPage.getSearchInputField().submit();
     }

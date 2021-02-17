@@ -9,8 +9,8 @@ import pageobjects.BasePage;
 public class GoogleSearchPage extends BasePage {
     public static final String PAGE_URL = "https://google.com.ua";
 
-    private static final String GOOGLE_SEARCH_PAGE_LOGO_XPATH = "//*[@id='hplogo']";
-    private static final String GOOGLE_SEARCH_PAGE_INPUT_FIELD_XPATH = "//*[@id='tsf']//div[@class='SDkEP']//input";
+    private static final String GOOGLE_SEARCH_PAGE_LOGO_XPATH = "//img[@alt='Google']";
+    private static final String GOOGLE_SEARCH_PAGE_INPUT_FIELD_XPATH = "//input[@role='combobox']";
 
 
     @Override
